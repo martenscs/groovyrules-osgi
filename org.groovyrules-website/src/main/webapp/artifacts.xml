@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<repository name='org.groovyrules' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1'>
+  <properties size='2'>
+    <property name='p2.timestamp' value='1370443220981'/>
+    <property name='publishPackFilesAsSiblings' value='true'/>
+  </properties>
+  <mappings size='5'>
+    <rule filter='(&amp; (classifier=osgi.bundle) (format=packed))' output='${repoUrl}/plugins/${id}_${version}.jar.pack.gz'/>
+    <rule filter='(&amp; (classifier=osgi.bundle))' output='${repoUrl}/plugins/${id}_${version}.jar'/>
+    <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}'/>
+    <rule filter='(&amp; (classifier=org.eclipse.update.feature) (format=packed))' output='${repoUrl}/features/${id}_${version}.jar.pack.gz'/>
+    <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
+  </mappings>
+  <artifacts size='4'>
+    <artifact classifier='osgi.bundle' id='org.groovyrules.osgi' version='2.1.1.201306051440'>
+      <properties size='5'>
+        <property name='artifact.size' value='1676'/>
+        <property name='download.size' value='1676'/>
+        <property name='maven-groupId' value='org.groovyrules'/>
+        <property name='maven-artifactId' value='org.groovyrules.osgi'/>
+        <property name='maven-version' value='2.1.1-SNAPSHOT'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='groovy-all' version='2.1.3'>
+      <properties size='6'>
+        <property name='artifact.size' value='6348194'/>
+        <property name='download.size' value='6348194'/>
+        <property name='download.md5' value='fe583fd5d20687c5b08c954042be4a37'/>
+        <property name='maven-groupId' value='org.codehaus.groovy'/>
+        <property name='maven-artifactId' value='groovy-all'/>
+        <property name='maven-version' value='2.1.3'/>
+      </properties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.groovyrules' version='2.1.1.201306051440'>
+      <properties size='6'>
+        <property name='artifact.size' value='2043'/>
+        <property name='download.size' value='2043'/>
+        <property name='maven-groupId' value='org.groovyrules'/>
+        <property name='maven-artifactId' value='org.groovyrules'/>
+        <property name='maven-version' value='2.1.1-SNAPSHOT'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.springsource.javax.rules' version='1.1.0'>
+      <properties size='6'>
+        <property name='artifact.size' value='14355'/>
+        <property name='download.size' value='14355'/>
+        <property name='download.md5' value='671d724508b9968ac335010922a522b4'/>
+        <property name='maven-groupId' value='javax.rules'/>
+        <property name='maven-artifactId' value='com.springsource.javax.rules'/>
+        <property name='maven-version' value='1.1.0'/>
+      </properties>
+    </artifact>
+  </artifacts>
+</repository>

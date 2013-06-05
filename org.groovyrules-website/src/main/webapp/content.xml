@@ -1,0 +1,355 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?metadataRepository version='1.1.0'?>
+<repository name='org.groovyrules' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1'>
+  <properties size='1'>
+    <property name='p2.timestamp' value='1370443220985'/>
+  </properties>
+  <units size='6'>
+    <unit id='org.groovyrules.feature.jar' version='2.1.1.201306051440'>
+      <properties size='7'>
+        <property name='org.eclipse.equinox.p2.name' value='org.groovyrules'/>
+        <property name='org.eclipse.equinox.p2.description' value='[Enter Feature Description here.]'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='http://www.example.com/description'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Java .NET'/>
+        <property name='maven-groupId' value='org.groovyrules'/>
+        <property name='maven-artifactId' value='org.groovyrules'/>
+        <property name='maven-version' value='2.1.1-SNAPSHOT'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.groovyrules.feature.jar' version='2.1.1.201306051440'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='org.groovyrules' version='2.1.1.201306051440'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='org.groovyrules' version='2.1.1.201306051440'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+      <licenses size='1'>
+        <license uri='http://www.example.com/license' url='http://www.example.com/license'>
+          [Enter License Description here.]
+        </license>
+      </licenses>
+      <copyright uri='http://www.example.com/copyright' url='http://www.example.com/copyright'>
+        [Enter Copyright Description here.]
+      </copyright>
+    </unit>
+    <unit id='groovy-all' version='2.1.3' singleton='false'>
+      <update id='groovy-all' range='[0.0.0,2.1.3)' severity='0'/>
+      <properties size='6'>
+        <property name='org.eclipse.equinox.p2.name' value='Groovy Runtime'/>
+        <property name='org.eclipse.equinox.p2.description' value='Groovy Runtime'/>
+        <property name='org.eclipse.equinox.p2.provider' value='The Codehaus'/>
+        <property name='maven-groupId' value='org.codehaus.groovy'/>
+        <property name='maven-artifactId' value='groovy-all'/>
+        <property name='maven-version' value='2.1.3'/>
+      </properties>
+      <provides size='111'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='groovy-all' version='2.1.3'/>
+        <provided namespace='osgi.bundle' name='groovy-all' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.classgen.asm.sc' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.testng' version='2.1.3'/>
+        <provided namespace='java.package' name='groovy.xml.streamingmarkupsupport' version='2.1.3'/>
+        <provided namespace='java.package' name='groovyjarjarantlr.actions.java' version='2.1.3'/>
+        <provided namespace='java.package' name='groovy.text' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.tools.groovydoc.gstringTemplates.topLevel' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.vmplugin' version='2.1.3'/>
+        <provided namespace='java.package' name='groovy.inspect.swingui' version='2.1.3'/>
+        <provided namespace='java.package' name='groovyjarjarantlr.ASdebug' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.runtime.typehandling' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.runtime.m12n' version='2.1.3'/>
+        <provided namespace='java.package' name='groovy.swing.impl' version='2.1.3'/>
+        <provided namespace='java.package' name='groovy.servlet' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.control.io' version='2.1.3'/>
+        <provided namespace='java.package' name='groovy.xml.dom' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.transform.sc.transformers' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.runtime.metaclass' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.classgen.asm' version='2.1.3'/>
+        <provided namespace='java.package' name='groovy.beans' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.runtime.callsite' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.classgen' version='2.1.3'/>
+        <provided namespace='java.package' name='groovy.ui.view' version='2.1.3'/>
+        <provided namespace='java.package' name='groovyjarjarasm.asm.util' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.transform.sc' version='2.1.3'/>
+        <provided namespace='java.package' name='groovy.jmx.builder' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.control.customizers.builder' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.runtime.dgmimpl.arrays' version='2.1.3'/>
+        <provided namespace='java.package' name='groovy.transform' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.ast.builder' version='2.1.3'/>
+        <provided namespace='java.package' name='groovy.json' version='2.1.3'/>
+        <provided namespace='java.package' name='groovy.util' version='2.1.3'/>
+        <provided namespace='java.package' name='groovyjarjarasm.asm.commons' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.tools' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.runtime.wrappers' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.runtime.powerassert' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.vmplugin.v5' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.runtime.memoize' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.vmplugin.v6' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.control.customizers' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.antlr.parser' version='2.1.3'/>
+        <provided namespace='java.package' name='groovy.mock.interceptor' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.tools.groovydoc.gstringTemplates.classLevel' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.reflection' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.antlr.treewalker' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.transform.stc' version='2.1.3'/>
+        <provided namespace='java.package' name='groovy.test' version='2.1.3'/>
+        <provided namespace='java.package' name='groovy.security' version='2.1.3'/>
+        <provided namespace='java.package' name='groovyjarjarantlr.actions.csharp' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.util' version='2.1.3'/>
+        <provided namespace='java.package' name='groovyjarjarantlr.preprocessor' version='2.1.3'/>
+        <provided namespace='java.package' name='groovy.util.slurpersupport' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.tools.gse' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.tools.shell.util' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.syntax' version='2.1.3'/>
+        <provided namespace='java.package' name='groovyjarjarantlr.collections.impl' version='2.1.3'/>
+        <provided namespace='java.package' name='groovy.swing.factory' version='2.1.3'/>
+        <provided namespace='java.package' name='groovy.io' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.tools.ast' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.ast' version='2.1.3'/>
+        <provided namespace='java.package' name='groovy.ui' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.binding' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.tools.groovydoc' version='2.1.3'/>
+        <provided namespace='java.package' name='groovyjarjarantlr.actions.cpp' version='2.1.3'/>
+        <provided namespace='java.package' name='groovy.swing' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.ast.tools' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.reflection.stdclasses' version='2.1.3'/>
+        <provided namespace='java.package' name='groovyjarjarantlr.debug.misc' version='2.1.3'/>
+        <provided namespace='java.package' name='groovyjarjarasm.asm.tree' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.runtime.dgmimpl' version='2.1.3'/>
+        <provided namespace='java.package' name='groovy.grape' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.jsr223' version='2.1.3'/>
+        <provided namespace='java.package' name='groovy.sql' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.groovydoc' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy' version='2.1.3'/>
+        <provided namespace='java.package' name='groovy.swing.binding' version='2.1.3'/>
+        <provided namespace='java.package' name='groovyjarjarantlr' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.control.messages' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.ast.expr' version='2.1.3'/>
+        <provided namespace='java.package' name='groovy.ui.icons' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.ast.stmt' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.ant' version='2.1.3'/>
+        <provided namespace='java.package' name='groovyjarjarasm.asm.signature' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.bsf' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.antlr.java' version='2.1.3'/>
+        <provided namespace='java.package' name='groovy.xml' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.transform' version='2.1.3'/>
+        <provided namespace='java.package' name='groovyjarjarcommonscli' version='2.1.3'/>
+        <provided namespace='java.package' name='groovy.lang' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.tools.shell' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.plugin' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.tools.xml' version='2.1.3'/>
+        <provided namespace='java.package' name='groovyjarjarantlr.debug' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.antlr' version='2.1.3'/>
+        <provided namespace='java.package' name='groovyjarjarantlr.build' version='2.1.3'/>
+        <provided namespace='java.package' name='groovyjarjarasm.asm' version='2.1.3'/>
+        <provided namespace='java.package' name='groovy.ui.text' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.tools.groovydoc.gstringTemplates.packageLevel' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.control' version='2.1.3'/>
+        <provided namespace='java.package' name='groovy.util.logging' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.tools.shell.commands' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.runtime' version='2.1.3'/>
+        <provided namespace='java.package' name='groovyjarjarantlr.collections' version='2.1.3'/>
+        <provided namespace='java.package' name='groovy.time' version='2.1.3'/>
+        <provided namespace='java.package' name='groovy.model' version='2.1.3'/>
+        <provided namespace='java.package' name='groovyjarjarantlr.actions.python' version='2.1.3'/>
+        <provided namespace='java.package' name='groovy.inspect' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.tools.javac' version='2.1.3'/>
+        <provided namespace='java.package' name='org.codehaus.groovy.tools.groovydoc.gstringTemplates' version='2.1.3'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='66'>
+        <required namespace='java.package' name='com.thoughtworks.qdox' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='com.thoughtworks.xstream' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='groovyjarjarasm.asm.tree.analysis' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='javax.accessibility' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='javax.management' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='javax.management.modelmbean' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='javax.management.remote' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='javax.management.remote.rmi' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='javax.management.timer' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='javax.print.attribute.standard' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='javax.rmi.ssl' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='javax.script' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='javax.servlet' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='javax.servlet.http' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='javax.servlet.jsp' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='javax.sql' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='javax.swing' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='javax.swing.border' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='javax.swing.event' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='javax.swing.filechooser' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='javax.swing.plaf' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='javax.swing.plaf.metal' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='javax.swing.table' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='javax.swing.text' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='javax.swing.text.html' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='javax.swing.tree' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='javax.swing.undo' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='javax.xml.namespace' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='javax.xml.parsers' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='javax.xml.transform' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='javax.xml.transform.dom' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='javax.xml.transform.stream' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='javax.xml.validation' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='javax.xml.xpath' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='jline' range='[1.0.0,2.0.0)' optional='true' greedy='false'/>
+        <required namespace='java.package' name='junit.framework' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='junit.textui' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='org.apache.bsf' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='org.apache.bsf.util' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='org.apache.ivy' range='[2.0.0,3.0.0)' optional='true' greedy='false'/>
+        <required namespace='java.package' name='org.apache.ivy.core.cache' range='[2.0.0,3.0.0)' optional='true' greedy='false'/>
+        <required namespace='java.package' name='org.apache.ivy.core.event' range='[2.0.0,3.0.0)' optional='true' greedy='false'/>
+        <required namespace='java.package' name='org.apache.ivy.core.event.download' range='[2.0.0,3.0.0)' optional='true' greedy='false'/>
+        <required namespace='java.package' name='org.apache.ivy.core.event.resolve' range='[2.0.0,3.0.0)' optional='true' greedy='false'/>
+        <required namespace='java.package' name='org.apache.ivy.core.module.descriptor' range='[2.0.0,3.0.0)' optional='true' greedy='false'/>
+        <required namespace='java.package' name='org.apache.ivy.core.module.id' range='[2.0.0,3.0.0)' optional='true' greedy='false'/>
+        <required namespace='java.package' name='org.apache.ivy.core.report' range='[2.0.0,3.0.0)' optional='true' greedy='false'/>
+        <required namespace='java.package' name='org.apache.ivy.core.resolve' range='[2.0.0,3.0.0)' optional='true' greedy='false'/>
+        <required namespace='java.package' name='org.apache.ivy.core.settings' range='[2.0.0,3.0.0)' optional='true' greedy='false'/>
+        <required namespace='java.package' name='org.apache.ivy.plugins.matcher' range='[2.0.0,3.0.0)' optional='true' greedy='false'/>
+        <required namespace='java.package' name='org.apache.ivy.plugins.resolver' range='[2.0.0,3.0.0)' optional='true' greedy='false'/>
+        <required namespace='java.package' name='org.apache.ivy.util' range='[2.0.0,3.0.0)' optional='true' greedy='false'/>
+        <required namespace='java.package' name='org.apache.tools.ant' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='org.apache.tools.ant.dispatch' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='org.apache.tools.ant.helper' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='org.apache.tools.ant.taskdefs' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='org.apache.tools.ant.types' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='org.apache.tools.ant.util' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='org.fusesource.jansi' range='[1.6.0,2.0.0)' optional='true' greedy='false'/>
+        <required namespace='java.package' name='org.junit' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='org.w3c.dom' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='org.xml.sax' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='org.xml.sax.ext' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='org.xml.sax.helpers' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='sun.awt' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='sun.java2d.pipe' range='0.0.0' optional='true' greedy='false'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='groovy-all' version='2.1.3'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: groovy-all&#xA;Bundle-Version: 2.1.3
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='com.springsource.javax.rules' version='1.1.0' singleton='false'>
+      <update id='com.springsource.javax.rules' range='[0.0.0,1.1.0)' severity='0'/>
+      <properties size='5'>
+        <property name='org.eclipse.equinox.p2.name' value='JSR-94 javax.rules API'/>
+        <property name='org.eclipse.equinox.p2.provider' value='SpringSource'/>
+        <property name='maven-groupId' value='javax.rules'/>
+        <property name='maven-artifactId' value='com.springsource.javax.rules'/>
+        <property name='maven-version' value='1.1.0'/>
+      </properties>
+      <provides size='5'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='com.springsource.javax.rules' version='1.1.0'/>
+        <provided namespace='osgi.bundle' name='com.springsource.javax.rules' version='1.1.0'/>
+        <provided namespace='java.package' name='javax.rules' version='1.1.0'/>
+        <provided namespace='java.package' name='javax.rules.admin' version='1.1.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='1'>
+        <required namespace='java.package' name='org.w3c.dom' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='com.springsource.javax.rules' version='1.1.0'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: com.springsource.javax.rules&#xA;Bundle-Version: 1.1.0
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.groovyrules.osgi' version='2.1.1.201306051440' singleton='false'>
+      <update id='org.groovyrules.osgi' range='[0.0.0,2.1.1.201306051440)' severity='0'/>
+      <properties size='5'>
+        <property name='org.eclipse.equinox.p2.name' value='Groovy Rules Osgi'/>
+        <property name='org.eclipse.equinox.p2.provider' value='JAVA .NET'/>
+        <property name='maven-groupId' value='org.groovyrules'/>
+        <property name='maven-artifactId' value='org.groovyrules.osgi'/>
+        <property name='maven-version' value='2.1.1-SNAPSHOT'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.groovyrules.osgi' version='2.1.1.201306051440'/>
+        <provided namespace='osgi.bundle' name='org.groovyrules.osgi' version='2.1.1.201306051440'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.groovyrules.osgi' version='2.1.1.201306051440'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: org.groovyrules.osgi&#xA;Bundle-Version: 2.1.1.201306051440
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.groovyrules.feature.group' version='2.1.1.201306051440' singleton='false'>
+      <update id='org.groovyrules.feature.group' range='[0.0.0,2.1.1.201306051440)' severity='0'/>
+      <properties size='8'>
+        <property name='org.eclipse.equinox.p2.name' value='org.groovyrules'/>
+        <property name='org.eclipse.equinox.p2.description' value='[Enter Feature Description here.]'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='http://www.example.com/description'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Java .NET'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+        <property name='maven-groupId' value='org.groovyrules'/>
+        <property name='maven-artifactId' value='org.groovyrules'/>
+        <property name='maven-version' value='2.1.1-SNAPSHOT'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.groovyrules.feature.group' version='2.1.1.201306051440'/>
+      </provides>
+      <requires size='4'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.groovyrules.osgi' range='[2.1.1.201306051440,2.1.1.201306051440]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='groovy-all' range='[2.1.3,2.1.3]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='com.springsource.javax.rules' range='[1.1.0,1.1.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.groovyrules.feature.jar' range='[2.1.1.201306051440,2.1.1.201306051440]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license uri='http://www.example.com/license' url='http://www.example.com/license'>
+          [Enter License Description here.]
+        </license>
+      </licenses>
+      <copyright uri='http://www.example.com/copyright' url='http://www.example.com/copyright'>
+        [Enter Copyright Description here.]
+      </copyright>
+    </unit>
+    <unit id='201306051440.Groovy JSR-94 Rule Engine' version='1.0.0.411cNUSo-773593E3C5AA3'>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='Groovy JSR-94 Rule Engine'/>
+        <property name='org.eclipse.equinox.p2.type.category' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='201306051440.Groovy JSR-94 Rule Engine' version='1.0.0.411cNUSo-773593E3C5AA3'/>
+      </provides>
+      <requires size='1'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.groovyrules.feature.group' range='[2.1.1.201306051440,2.1.1.201306051440]'/>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+    </unit>
+  </units>
+</repository>
