@@ -44,7 +44,6 @@ public class DirectRuleImpl extends RuleAbstract<RuleData, Object> {
    */
   private final static Class<?> createRulesClass(String rulesString) {
     Class<?> returnValue = null;
-    @SuppressWarnings("resource")
     GroovyClassLoader groovyLoader = new GroovyClassLoader();
     try {
       returnValue = groovyLoader.parseClass(rulesString);

@@ -1,6 +1,5 @@
 package org.groovyrules.filerules;
 
-import java.io.FileInputStream;
 import java.io.InputStream;
 import java.io.Reader;
 import java.util.ArrayList;

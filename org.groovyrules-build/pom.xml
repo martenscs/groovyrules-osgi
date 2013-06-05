@@ -15,11 +15,10 @@
 		<project.build.java.version>1.6</project.build.java.version>
 	</properties>
 	<modules>
-	
+		<module>../org.groovyrules.osgi</module>
 		<module>../org.groovyrules</module>
 		<module>../org.groovyrules-repository</module>
 		<module>../org.groovyrules-website</module>
-		<module>../org.groovyrules.osgi</module>
 	</modules>
 	<dependencies>
 		<dependency>
@@ -47,7 +46,7 @@
 		</repository>
 		<repository>
 			<id>indigo</id>
-			<url>http://download.eclipse.org/releases/indigo</url>
+			<url>http://download.eclipse.org/releases/juno</url>
 			<layout>p2</layout>
 		</repository>
 		<repository>
@@ -57,7 +56,7 @@
 		</repository>
 		<repository>
 			<id>eclipse-prodct</id>
-			<url>http://download.eclipse.org/eclipse/updates/3.7</url>
+			<url>http://download.eclipse.org/eclipse/updates/3.8</url>
 			<layout>p2</layout>
 		</repository>
 	</repositories>

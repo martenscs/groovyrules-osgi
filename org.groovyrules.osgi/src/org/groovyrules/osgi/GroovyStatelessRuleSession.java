@@ -1,12 +1,10 @@
 /**
  * 
  */
+package org.groovyrules.osgi;
 
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.net.URL;
 import java.rmi.RemoteException;
 import java.util.HashMap;
 import java.util.List;
@@ -70,21 +68,20 @@ public class GroovyStatelessRuleSession implements StatelessRuleSession {
 
 			// Get an input stream to a test XML ruleset.
 			// This rule execution set was modified from the TCK.
-			ClassLoader cl = Thread.currentThread().getContextClassLoader();
-			InputStream url = bundle.getEntry(rulesFile).openStream();
-
-			// InputStream inStream = new FileInputStream(url);
+			InputStream url =bundle.getEntry(rulesFile).openStream();
+		
+			//InputStream inStream = new FileInputStream(url);
 
 			Map mappedClassloader = new HashMap();
 			mappedClassloader.put(
-					RuleServiceProviderImpl.RULE_IMPL_CLASSLOADER, Thread
-							.currentThread().getContextClassLoader());
-			mappedClassloader.put(RuleServiceProviderImpl.RULE_IMPL_BUNDLE,
-					bundle);
+					RuleServiceProviderImpl.RULE_IMPL_CLASSLOADER,Thread.currentThread().getContextClassLoader());
+			mappedClassloader.put(
+					RuleServiceProviderImpl.RULE_IMPL_BUNDLE,bundle);
 			// Parse the ruleset from the config file
 			LocalRuleExecutionSetProvider provider = ruleAdministrator
 					.getLocalRuleExecutionSetProvider(null);
-
+			
+			
 			RuleExecutionSet res1 = provider.createRuleExecutionSet(url,
 					mappedClassloader);
 			url.close();

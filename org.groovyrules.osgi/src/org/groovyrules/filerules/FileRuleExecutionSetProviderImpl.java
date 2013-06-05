@@ -7,7 +7,6 @@ import java.io.InputStream;
 import java.io.Reader;
 import java.io.Serializable;
 import java.net.URI;
-import java.net.URL;
 import java.rmi.RemoteException;
 import java.util.HashMap;
 import java.util.Map;
