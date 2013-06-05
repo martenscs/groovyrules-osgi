@@ -1,0 +1,60 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>org.groovyrules-repository</artifactId>
+	<packaging>eclipse-repository</packaging>
+	<parent>
+		<groupId>org.groovyrules</groupId>
+		<artifactId>org.groovyrules-build</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+		<relativePath>../org.groovyrules-build</relativePath>
+	</parent>
+	<organization>
+		<name>Java .NET</name>
+	</organization>
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>install</id>
+						<phase>install</phase>
+						<configuration>
+							<tasks>
+								<delete dir="${web-deploy-artifact}/target" />
+								<delete dir="${web-deploy-artifact}/src/main/webapp/plugins" />
+								<delete dir="${web-deploy-artifact}/src/main/webapp/features" />
+								<delete>
+									<fileset dir="${web-deploy-artifact}/src/main/webapp/"
+										includes="*.jar" />
+								</delete>
+								<delete>
+									<fileset dir="${web-deploy-artifact}/src/main/webapp/"
+										includes="*.zip" />
+								</delete>
+								<copy todir="${web-deploy-artifact}/src/main/webapp/">
+									<fileset dir="${project.build.directory}/repository" />
+								</copy>
+
+							</tasks>
+						</configuration>
+						<goals>
+							<goal>run</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-p2-repository-plugin</artifactId>
+				<configuration>
+					<includeAllDependencies>true</includeAllDependencies>
+					<compress>false</compress>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<name>org.groovyrules</name>
+
+</project>

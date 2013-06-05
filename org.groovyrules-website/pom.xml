@@ -1,0 +1,44 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>org.groovyrules-website</artifactId>
+	<packaging>war</packaging>
+	<name>org.groovyrules-website Maven Webapp</name>
+	<organization>
+		<name>Java .NET</name>
+	</organization>
+	<parent>
+		<groupId>org.groovyrules</groupId>
+		<artifactId>org.groovyrules-build</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+		<relativePath>../org.groovyrules-build</relativePath>
+	</parent>
+	<properties>
+		<domain.context>groovyrules-osgi</domain.context>
+	</properties>
+	<build>
+		<sourceDirectory>src/main/resources</sourceDirectory>
+		<finalName>${domain.context}</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>tomcat-maven-plugin</artifactId>
+				<version>1.1</version>
+				<configuration>
+					<url>http://localhost:8980/manager/html</url>
+					<server>tomcat-local</server>
+					<path>/${domain.context}</path>
+				</configuration>
+				<executions>
+					<execution>
+						<id>deploy-war</id>
+						<phase>package</phase>
+						<goals>
+							<goal>redeploy</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>

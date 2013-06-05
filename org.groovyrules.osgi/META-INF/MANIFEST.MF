@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Groovy Rules Osgi
+Bundle-SymbolicName: org.groovyrules.osgi
+Bundle-Version: 2.1.1.qualifier
+Bundle-Vendor: JAVA .NET
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: org.groovyrules.core;version="2.1.1",
+ org.groovyrules.directrules;version="2.1.1",
+ org.groovyrules.filerules;version="2.1.1",
+ org.groovyrules.osgi;version="2.1.1"
