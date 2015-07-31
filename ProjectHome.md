@@ -1,0 +1,1 @@
+This a version of org.groovyrules that has been modified to work with OSGi as a service.
